@@ -1,0 +1,19 @@
+def bubble_sort(list):
+    for passnum in range(len(list)-1,0,-1):
+        #passess
+        print('====== pass # {}'.format(passnum))
+        for i in range(passnum):
+            print(list)
+            if list[i]>list[i+1]:
+                #swap!
+                temp=list[i]
+                list[i]=list[i+1]
+                list[i+1]=temp
+
+    return  list
+test_list=[5,1,4,2,8]
+bubble_sort(test_list)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
